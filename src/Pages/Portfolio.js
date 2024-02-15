@@ -10,7 +10,6 @@ export function Portfolio() {
     fetch('https://api.github.com/users/Hebader/repos') 
       .then(response => response.json())
       .then(data => {
-        console.log(data);
         setPosts(data);
         setLoading(false); 
       })
@@ -41,13 +40,13 @@ const Post = ({ name, description, html_url }) => {
       <h2>{name}</h2>
       <div className="column">
        
-        <a href={html_url} className="info-button" target="_blank" rel="noopener noreferrer">
-          Mer information
+      <a href={html_url} className="info-button" target="_blank" rel="noopener noreferrer">
+  {description ? description + " - " : ""}Mer information
         </a>
         <div className="modal">
           <h2>{name}</h2>
           <p>{description}</p>
-          <p>{html_url}</p>
+       
         </div>
       </div>
     </li>
