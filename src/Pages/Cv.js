@@ -1,13 +1,12 @@
 import React from 'react';
 import './cv.css';
 import Bookdata from "../enkeldata.json";
-
-
+import Påskägg from "../Components/Påskägg";
 
  export function Cv () {
   return (
     <>
-
+  <Påskägg/>
       <main>
         <div className="container">
           <div className="left-column">
@@ -87,7 +86,7 @@ import Bookdata from "../enkeldata.json";
 
         </div>
       </main>
-
+      
       <footer>
         <p>© 2024 Heba Derawi</p>
       </footer>

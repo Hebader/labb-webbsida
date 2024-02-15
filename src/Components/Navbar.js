@@ -1,15 +1,31 @@
 import React from 'react';
 import "./Navbar.css";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
-    return ( 
-    <nav className="Meny">
-    <ul>
-    <li><NavLink to="/" activeClassName="active">Hem</NavLink></li>
-    <li><NavLink to="/Cv" activeClassName="active">Cv</NavLink></li>
-    <li><NavLink to="/Portfolio" activeClassName="active">Portfolio</NavLink></li>
-    </ul>
-  </nav>
-    );
+  return (
+    <div className='navbar'>
+        <div className='menu-container'>
+            <ul className='nav-links'>
+                <li>
+                    <Link to='/' className='nav-link'>
+                        Hem
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/cv' className='nav-link'>
+                        Cv
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/portfolio' className='nav-link'>
+                        Portfolio
+                    </Link>
+                </li>
+                
+               
+            </ul>
+        </div>
+    </div>
+);
 };
