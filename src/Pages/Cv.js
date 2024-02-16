@@ -7,10 +7,11 @@ import Påskägg from "../Components/Påskägg";
   return (
     <>
   <Påskägg/>
+ 
       <main>
         <div className="container">
           <div className="left-column">
-            <h1>CV- Heba Derawi.</h1>
+            <h1>CV- Heba Derawi</h1>
             <figure className="column">
             <img src={process.env.PUBLIC_URL + '/bilder/jag2.jpg'} alt="bild på mig" />
             </figure>

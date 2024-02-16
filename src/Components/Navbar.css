@@ -1,24 +1,3 @@
-.Meny ul{
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    overflow: hidden;
-    background-color: rgb(9, 9, 9);
-}
-.Meny li{
-    float:left;
-}
-.Meny li a{
-    display:block;
-    color:rgb(252, 252, 252);
-    text-align:center;
-    padding: 14px 16px;
-    text-decoration:none;
-}
-.Meny li a:hover{
-    background-color:rgb(113, 130, 214);
-
-}
 .navbar{
     width: 100%;
     background-color: #333;
