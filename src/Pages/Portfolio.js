@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import "./Portfolio.css";
+import Påskägg2 from "../Components/Påskägg2";
 
-export function Portfolio() {
+export default function Portfolio() {
+  
+
 
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true); 
@@ -17,9 +20,11 @@ export function Portfolio() {
   }, []);
 
   return (
+    
     <div className="container">
       <div className="column">
         <h1>Portfolio - Mina GitHub-projekt</h1>
+        <Påskägg2/>
       </div>
       {loading ? (
         <p>Loading projects...</p>

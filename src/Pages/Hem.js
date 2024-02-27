@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hem.css';
 
-export function Hem () {
+export default function Hem () {
   return (
     <>
       <body>
@@ -18,4 +18,5 @@ export function Hem () {
     </>
   );
 };
+
 

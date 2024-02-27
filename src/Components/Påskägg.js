@@ -1,54 +1,35 @@
 import React, { useEffect, useState } from "react";
 import "./Påskägg.css";
-
+ 
 const Påskägg = () => {
-  const [color, setColor] = useState("#877676b7");
-  const [backgroundChanged, setBackgroundChanged] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [konamiCode, setKonamiCode] = useState('');
-
-  const handleKeyPress = (e) => {
-    setKonamiCode((prevCode) => prevCode + e.key);
+ 
+  const handleKeyPress = (event) => {
+    setKonamiCode((prev) => prev + event.key);
   };
-
+ 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeyPress);
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyPress);
-    };
-  }, []); 
-
-  useEffect(() => {
+    console.log('Konami Code:', konamiCode);
+ 
     if (konamiCode.includes('1337')) {
+      console.log('Konami Code activated!');
       setShowModal(true);
-      setKonamiCode(''); 
+      setKonamiCode('');
     }
+    window.addEventListener('keypress', handleKeyPress);
+    return () => window.removeEventListener('keypress', handleKeyPress);
   }, [konamiCode]);
-
-  const handleEasterEggClick = () => {
-    setBackgroundChanged(!backgroundChanged);
-    setColor("red"); 
-  };
-
-  useEffect(() => {
-    document.body.style.backgroundColor = color;
-  }, [color]);
-
+ 
   return (
-    <div className={`APP ${backgroundChanged ? 'changed-background' : ''}`}>
-      <div
-        className="easter-egg"
-        onClick={handleEasterEggClick}
-      ></div>
-
-      {showModal && (
-        <div className="modal" onClick={() => setShowModal(false)}>
+    showModal && (
+      <div className="modal" onClick={() => setShowModal(false)}>
+        <div className="modal-content">
           <p>Tittut!</p>
         </div>
-      )}
-    </div>
+      </div>
+    )
   );
 };
-
+ 
 export default Påskägg;

@@ -7,6 +7,7 @@ import Påskägg from "../Components/Påskägg";
   return (
     <>
   <Påskägg/>
+ 
       <main>
         <div className="container">
           <div className="left-column">

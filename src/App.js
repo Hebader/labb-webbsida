@@ -1,9 +1,10 @@
 import { HashRouter as Router,Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Navbar } from "./Components/Navbar";
-import { Cv } from "./Pages/Cv";
-import { Portfolio } from "./Pages/Portfolio";
-import { Hem } from "./Pages/Hem";
+import Navbar from "./Components/Navbar";
+import Cv  from "./Pages/Cv";
+import Portfolio from "./Pages/Portfolio";
+import Hem from "./Pages/Hem";
+import Kontakt from "./Pages/Kontakt";
 
 export default function App () {
   return (
@@ -17,6 +18,7 @@ export default function App () {
           <Route path="/" element={<Hem/>}/>
           <Route path="/cv" element={<Cv/>}/>
           <Route path="/portfolio" element={<Portfolio/>}/>
+          <Route path="/kontakt" element={<Kontakt/>}/>
         </Routes>
       </main>
     </div>
