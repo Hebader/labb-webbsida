@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/labb-webbsida/static/css/main.6619301a.css",
+    "main.js": "/labb-webbsida/static/js/main.530a8185.js",
+    "static/js/592.5b1fa371.chunk.js": "/labb-webbsida/static/js/592.5b1fa371.chunk.js",
+    "index.html": "/labb-webbsida/index.html",
+    "main.6619301a.css.map": "/labb-webbsida/static/css/main.6619301a.css.map",
+    "main.530a8185.js.map": "/labb-webbsida/static/js/main.530a8185.js.map",
+    "592.5b1fa371.chunk.js.map": "/labb-webbsida/static/js/592.5b1fa371.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6619301a.css",
+    "static/js/main.530a8185.js"
+  ]
+}
